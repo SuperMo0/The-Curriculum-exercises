@@ -1,0 +1,6 @@
+Index: 1: [birth]  ":"  Value error, Invalid birth date
+Index: 2: [birth]  ":"  Value error, Invalid birth date
+Index: 5: [birth]  ":"  Value error, Invalid birth date
+Index: 6: [name]  ":"  Field requiredIndex: 6: [birth]  ":"  Value error, Invalid birth date
+Index: 7: [birth]  ":"  Input should be a valid date or datetime, input is too short
+Index: 8: [name]  ":"  Field requiredIndex: 8: [birth]  ":"  Field required
