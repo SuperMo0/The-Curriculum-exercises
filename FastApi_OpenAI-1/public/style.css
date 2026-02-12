@@ -1,0 +1,121 @@
+:root
+{
+    --bg: #1e1f24;
+    --card: #2a2d35;
+    --text: #eaf2ff;
+    --muted: #b5bfd1;
+    --accent: #ff6347;
+    --accent-hover: #ff7b63;
+    --border: #3a3f4b;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    background: radial-gradient(circle at top, #2a2d35, var(--bg) 50%);
+    color: var(--text);
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+.page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.card {
+    width: min(760px, 100%);
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent);
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.subtitle {
+    margin: 0 0 20px;
+    color: var(--muted);
+}
+
+.upload-form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.file-label {
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    background: #23262d;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+}
+
+button {
+    width: fit-content;
+    padding: 10px 16px;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-1px);
+}
+
+.image-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 560px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: #1b1d23;
+    min-height: 180px;
+    display: grid;
+    place-items: center;
+}
+
+.output-image {
+    object-fit: cover;
+    width: 100%;
+    display: none;
+    transition: transform 0.25s ease;
+}
+
+.output-image:hover {
+    transform: scale(2.5);
+}
+
+.main_subject {
+    margin-top: 14px;
+    padding: 10px 12px;
+    border-left: 3px solid var(--accent);
+    background: rgba(255, 99, 71, 0.08);
+    border-radius: 8px;
+    color: var(--text);
+    min-height: 42px;
+}

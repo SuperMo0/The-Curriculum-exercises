@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../public/style.css">
+    <script src="./../public/script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="page">
+        <section class="card">
+            <h1>Image Focal Point Finder</h1>
+            <p class="subtitle">Upload an image and get the main subject focal point in seconds.</p>
+
+            <form class="upload-form" onsubmit="handle_submit(event)" action="/upload" method="post">
+                <label for="upload" class="file-label">Choose an image</label>
+                <input id="upload" type="file" accept="image/*">
+                <button type="submit">Analyze Image</button>
+            </form>
+
+            <div class="image-container">
+                <img class="output-image" src="#" alt="Uploaded preview">
+            </div>
+
+            <p class="main_subject"></p>
+
+            <p class="focal_point"></p>
+        </section>
+    </main>
+
+</body>
+
+</html>
