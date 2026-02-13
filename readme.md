@@ -1,1 +1,5 @@
-# This repository contains mini projects for my AI engineering learning journey
+# Mini Projects for My AI Engineer Learning Journey
+
+## To‑Do
+
+- Use the `marked` package to render the lesson from a Markdown file.
